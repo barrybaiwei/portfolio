@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="css/index.style.css" rel="stylesheet" type = "text/css">
+	</head>
+	<body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="timeline.html">TimeLine</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+		<main role ="main">
+  		<!--div class="jumbotron">
+  			<div class="container py-0">
+    				<h1>brace yourself</h1>
+    				<p>this exercise looks like more work than it actually is, since you can copy and paste a majority of it. you might ask yourself in this regard why there is a gap between the navbar and the jumbotron. this is because the navbar is set to static and not to fixed.</p> 
+  			</div>
+  		</div-->
+      <div class="container">
+        <img class="mySlides" src="images/banner1.jpg" style="width:100%">
+        <img class="mySlides" src="images/banner2.jpg" style="width:100%">
+        <img class="mySlides" src="images/banner3.jpg" style="width:100%">
+        <script src="js/script.js"></script>
+      
+        <div class = "hero-text">
+          <h1>I am Bawei Yu</h1>  
+          <p><big>And I'm a Computer Science student</big></p>
+          <button  onclick= "location.href='timeline.html'">About me</button>
+        </div>
+        <hr>
+      </div>
+
+  		<!--div class="container">
+   			<div class="row">
+      			<div class="col-md-4">
+        				<h2>heading</h2>
+        				<p>vivamus felis odio, tristique posuere mollis ut, gravida et lorem. etiam a augue fermentum, auctor erat nec, porttitor magna. proin sit amet egestas purus. proin iaculis sed quam sit amet laoreet.</p>
+        				<p><a class="btn btn-secondary" href="#" role="button">more details »</a></p> 				
+      			</div>
+      			<div class="col-md-4">
+        				<h2>heading</h2>
+        				<p>curabitur malesuada gravida lacus eget iaculis. duis diam magna, gravida ac posuere sit amet, sollicitudin non justo. praesent pretium tristique risus. donec feugiat, tortor ac semper laoreet, enim arcu tempor nisi, eu aliquam ex nisl elementum ex.</p>
+        				<p><a class="btn btn-secondary" href="#" role="button">more details »</a></p>
+      			</div>
+      			<div class="col-md-4">
+        				<h2>heading</h2>        
+        				<p>integer posuere sed justo vel dignissim. pellentesque elementum aliquam aliquet. nullam quis consectetur libero, et cursus nunc. donec iaculis enim a velit iaculis dictum. aliquam erat volutpat.</p>
+        				<p><a class="btn btn-secondary" href="#" role="button">more details »</a></p>
+      			</div>
+    			</div>
+    			<hr>
+  		</div-->
+      <div class="container">
+        <div style="text-align:center">
+          <h2>My Skills</h2>
+          <br>
+        </div>
+        <div class="row">
+          <div class="col-md-4 about-one">
+            <span class="one"> </span>
+            <h4>Objective</h4>
+            <p> Seeking a position as software developer or IT engineer.</p>
+          </div>
+          <div class="col-md-4 about-one">
+            <span class="two"> </span>
+            <h4>Languages</h4>
+            <p> Primary in C/C++, Java, CSS, HTML, experienced in JavaScript (Node.js, jQuery,and APIs), MySQL and Git.</p>
+          </div>
+          <div class="col-md-4 about-one">
+            <span class="tre"> </span>
+            <h4>Technologies</h4>
+            <p>Windows PC trouble shooting and database maintenance/management.</p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <hr>
+      </div>    
+
+      <div class="container">
+        <div style="text-align:center">
+          <h2>My Projects</h2>
+        </div>
+        <!-- The four columns -->
+        <div class="row">
+          <div class="column">
+            <img src="images/project1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="images/project2.jpg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="images/project3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="images/project4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+          </div>
+        </div>
+
+        <div class="container">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:100%">
+          <div id="imgtext"></div>
+        </div>
+        <hr>
+      </div>
+
+      <div class="container">
+        <div style="text-align:center">
+          <h2>Where I live</h2>
+          <br>
+        </div>
+        <div class="googlemap" id="map" style="width:100%;height:400px;"></div>
+          <script>
+            function myMap() {
+              var myCenter = new google.maps.LatLng(45.5068547,-122.6594829);
+              var mapCanvas = document.getElementById("map");
+              var mapOptions = {center: myCenter, zoom: 12};
+              var map = new google.maps.Map(mapCanvas, mapOptions);
+              var marker = new google.maps.Marker({position:myCenter});
+              marker.setMap(map);
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFWoN-u5Va2asw_Mh5OvDeJEm3nXV7aDM&callback=myMap"></script>
+          <hr>
+        </div>
+      </div>
+
+	  </main>
+
+		<footer class="container">
+     	<p>@2018 Baiwei Yu</p>
+      <a href="https://facebook.com/barry.baiwei" target="_blank"><img src="images/facebook.jpg" alt="Facebook logo"></a>
+   	</footer>
+    <br>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	</body>
+</html>

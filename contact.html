@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    	<link href="css/index.style.css" rel="stylesheet" type = "text/css">
+    	<link href="css/contact.style.css" rel="stylesheet" type = "text/css">
+	</head>
+	<body>
+	    <div class="topnav">
+	      <a href="index.html">Home</a>
+	      <a href="timeline.html">TimeLine</a>
+	      <a href="contact.html">Contact</a>
+	    </div
+
+		<main role ="main">
+			<h2>Contact Info</h2>
+			<!--p>Resize the browser window to see the effect.</p-->
+			<br>
+
+	      	<div class="container">
+				<div class="row">
+				  <div class="column">
+				    <div class="card">
+				      <img src="images/selfie.jpg" alt="Jane" style="width:100%">
+				      <div class="container">
+				        <h2>Baiwei Yu</h2>
+				        <p class="title">Computer Science Major</p>
+				        <p><I>"Let's build a better world with what we learn."</I></p>
+				        <p>baiwei@pdx.edu</p>
+				        <p><button class="button" onclick="document.getElementById('id01').style.display='block'">Contact</button></p>
+				      </div>
+				    </div>
+				  </div>
+
+				    <!--div class="column">
+				      <div class="card">
+				        <img src="images/monster.jpg" alt="Jane" style="width:100%">
+				        <div class="container">
+				          <h2>My friend</h2>
+				          <p class="title">CEO & Founder</p>
+				          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+				          <p>example@example.com</p>
+				          <p><button class="button">Contact</button></p>
+				        </div>
+				      </div>
+				    </div-->
+				</div>
+			</div>
+
+			<div id="id01" class="modal">
+			  <form class="modal-content" action="/action_page.php">
+			    <div class="imgcontainer">
+			      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			      <img src="images/selfie.jpg" alt="Avatar" class="avatar">
+			    </div>
+
+			    <div class="container">
+			    	<label for="uname"><b>Name</b><span class="asterisk">*</span></label>
+			    	<input type="text" name="uname">
+
+			    	<label for="email"><b>Email</b><span class="asterisk">*</span></label>
+			    	<input type="text" name="email">
+
+			    	<label for="message"><b>Message</b><span class="asterisk">*</span></label>
+			    	<br>
+        			<textarea type="text" name="message" rows="3" style = "width:100%"></textarea>
+			        
+			    	<button type="submit">Send</button>
+			    </div>
+
+			    <div class="container" style="background-color:#f1f1f1">
+			    	<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			    </div>
+			  </form>
+			</div>
+
+			<script>
+				// Get the modal
+				var modal = document.getElementById('id01');
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				    if (event.target == modal) {
+				        modal.style.display = "none";
+				    }
+				}
+			</script>
+
+		</main>	
+	</body>
+</html>
